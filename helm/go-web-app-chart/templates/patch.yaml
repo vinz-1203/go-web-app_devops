@@ -1,2 +1,8 @@
 spec:
-  type: NodePort
+  source:
+    helm:
+      valueFiles:
+        - values.yaml
+      parameters:
+        - name: service.type
+          value: NodePort
