@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: vinz1230/go-web-app:v1
+        image: vinz1230/go-web-app:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
