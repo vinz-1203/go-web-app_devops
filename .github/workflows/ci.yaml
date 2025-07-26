@@ -42,7 +42,7 @@ jobs:
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
       with:
-        version: v1.57.2  # Use v1.57.0 or newer for Go 1.22 support
+        version: v1.56.2  # Use v1.57.0 or newer for Go 1.22 support
   
   push:
     runs-on: ubuntu-latest
