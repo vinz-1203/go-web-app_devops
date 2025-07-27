@@ -7,13 +7,13 @@ spec:
   hosts:
   - "*"
   gateways:
-  - go-web-gateway
+  - go-web-app/go-web-gateway
   http:
   - match:
     - uri:
         prefix: /
     route:
     - destination:
-        host: go-web-app
+        host: go-web-app.go-web-app.svc.cluster.local
         port:
           number: 80

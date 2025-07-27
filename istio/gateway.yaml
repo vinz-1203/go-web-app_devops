@@ -5,7 +5,7 @@ metadata:
   namespace: go-web-app
 spec:
   selector:
-    istio: ingressgateway # use Istio's default ingress gateway
+    istio: ingressgateway
   servers:
   - port:
       number: 80
